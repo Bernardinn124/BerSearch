@@ -12,7 +12,12 @@ o\:*         { behavior: url(#default#VML) }
 .shape       { behavior: url(#default#VML) }
 </style>
 <![endif]-->
-<audio src="musica.wav" id="musica_xp" loop></audio>
+document.addEventListener('click', function() {
+    var som = document.getElementById('musica_xp');
+    som.play();
+  }, { once: true });
+</script>
+
 
 <script>
   document.body.addEventListener('click', function() {
@@ -186,6 +191,7 @@ Criado Por: Bernardinn124</p>
 </body>
 
 </html>
+
 
 
 
