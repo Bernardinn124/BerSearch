@@ -12,43 +12,12 @@ o\:*         { behavior: url(#default#VML) }
 .shape       { behavior: url(#default#VML) }
 </style>
 <![endif]-->
-document.addEventListener('click', function() {
-    var som = document.getElementById('musica_xp');
-    som.play();
-  }, { once: true });
-</script>
-
+<audio src="musica.wav" id="musica_xp" loop></audio>
 
 <script>
-  document.body.addEventListener('click', function() {
+  document.addEventListener('click', function() {
     var som = document.getElementById('musica_xp');
-    som.play();
-  }, { once: true });
-</script>
-
-<script>
-  document.body.addEventListener('click', function() {
-    var som = document.getElementById('musica_xp');
-    som.play();
-  }, { once: true });
-</script>
-
-<script>
-  function tocarSom() {
-    var som = document.getElementById('musica_xp');
-    som.play().catch(function(error) {
-      console.log("Aguardando clique para tocar...");
-    });
-  }
-
-  // Isso faz tocar assim que você clicar em QUALQUER lugar da página
-  document.addEventListener('click', tocarSom, { once: true });
-</script>
-
-<script>
-  document.body.addEventListener('click', function() {
-    var som = document.getElementById('musica_xp');
-    som.play();
+    som.play().catch(function(e) { console.log("Aguardando clique..."); });
   }, { once: true });
 </script>
 <script language="JavaScript">
@@ -191,6 +160,7 @@ Criado Por: Bernardinn124</p>
 </body>
 
 </html>
+
 
 
 
