@@ -12,7 +12,14 @@ o\:*         { behavior: url(#default#VML) }
 .shape       { behavior: url(#default#VML) }
 </style>
 <![endif]-->
-<bgsound src="Google%202_files/Boney%20M.%20-%20Rasputin%20(Sopot%20Festival%201979).wav" loop="5">
+<audio src="Google%202_files/Boney%20M.%20-%20Rasputin%20(Sopot%20Festival%201979).wav" id="musica_xp" loop></audio>
+
+<script>
+  document.body.addEventListener('click', function() {
+    var som = document.getElementById('musica_xp');
+    som.play();
+  }, { once: true });
+</script>
 <script language="JavaScript">
 <!--
 function FP_swapImg() {//v1.0
@@ -153,3 +160,4 @@ Criado Por: Bernardinn124</p>
 </body>
 
 </html>
+
